@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700&family=Roboto:ital,wght@0,100;0,400;1,100;1,300&display=swap" rel="stylesheet">
+
+    <title>CRM</title>
+</head>
+<body>
+    <section class="section">
+        <div class="container">
+            
+            <h1 class="container__title">Добавить товар</h1>
+            <button class="container__title-button" type="button"></button>
+            <img class="container__title-underline" src="img/Rectangle 104.svg" alt="Полоса">
+                    
+            <form class="container__form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+                <fieldset class="container__fieldset">
+                    <fieldset class="fieldset fieldset-item">
+                        <label class="fieldset-item label" for="item">Наименование</label><br>
+                        <input class="fieldset-item input" type="text" name="name" id="item">
+                    </fieldset>
+
+                    <fieldset class="fieldset fieldset-group">
+                        <label class="fieldset-group label" for="group">Категория</label><br>
+                        <input class="fieldset-group input" type="text" name="category" id="group">
+                    </fieldset>
+
+                    <fieldset class="fieldset fieldset-measurement">
+                        <label class="fieldset-measurement label" for="measurement">Единицы измерения</label><br>
+                        <input class="fieldset-measurement input" type="text" name="units" id="measurement">
+                    </fieldset>
+
+                    <fieldset class="fieldset fieldset-discount">
+                        <label class="fieldset-discount label">Дисконт<br>
+                            <input class="fieldset-discount__input-checkbox" type="checkbox" name="discount">
+                            <div class="checkbox-mark"></div>
+                            <input class="fieldset-discount__input-text" type="text" disabled>
+                        </label>
+                    </fieldset>
+
+                    <fieldset class="fieldset fieldset-description">
+                        <label class="fieldset-description label" for="about">Описание</label><br>
+                        <textarea class="fieldset-description__textarea" name="description" id="about"></textarea>
+                    </fieldset>
+
+                    <fieldset class="fieldset fieldset-quantity">
+                        <label class="fieldset-quantity label" for="quantity">Количество</label><br>
+                        <input class="fieldset-quantity input" type="number" name="count" min="1" id="quantity">
+                    </fieldset>
+
+                    <fieldset class="fieldset fieldset-price">
+                        <label class="fieldset-price label" for="price">Цена</label><br>
+                        <input class="fieldset-price input" type="text" name="price" id="price">
+                    </fieldset>
+
+                    <button class="button container__fieldset-button" type="file">Добавить изображение</button>
+                </fieldset>
+
+                
+                    <p class="total-price">Итоговая стоимость: <span>$ 900.00</span> </p>
+                    <button class="button container__button" type="submit">Добавить товар</button>
+
+            </form>
+
+        </div>
+    </section>
+</body>
+</html>

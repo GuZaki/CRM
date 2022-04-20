@@ -1,0 +1,116 @@
+.fieldset {
+    width: 250px;
+    margin: 0;
+    padding: 0;
+}
+
+.fieldset-item:nth-child(1) {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.fieldset-description {
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+
+.fieldset-quantity {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.input {
+    width: 250px;
+    height: 40px;
+    border-radius: 6px;
+    border: none;
+    background-color: #F4F2FF;
+    margin: 5px 0 12px 0;
+}
+
+.label {
+    width: 240px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: normal;
+    padding-left: 10px;
+    letter-spacing: 1px;
+}
+
+.fieldset-description__textarea {
+    width: 250px;
+    height: 112px;
+    border-radius: 6px;
+    border: none;
+    background-color: #F4F2FF;
+    margin: 5px 0 12px 0;
+    resize: none;
+}
+
+.fieldset-discount {
+    position: relative;
+}
+
+.checkbox-mark {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    border: none;
+    background-color: #F4F2FF;
+}
+
+.fieldset-discount__input-checkbox {
+    position: absolute;
+    width: 10%; /*чтобы ширина чекбокса распространяласть только на div.checkbox-mark*/
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0; /*скрываем чекбокс*/
+}
+
+.fieldset-discount > input:checked + .checkbox-mark::after {
+    content: url("img/akar-icons_check.svg");
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+
+.fieldset-discount > input:checked ~ .fieldset-discount__input-text {
+    background-color: #F4F2FF;
+}
+
+.fieldset-discount__input-text {
+    width: 200px;
+    height: 40px;
+    border-radius: 6px;
+    border: none;
+    background-color: #EEEEEE;
+    margin: 5px 0 12px 50px;
+}
+
+.button {
+    background-color: #6D5BD0;
+    color: #ffffff; 
+    text-transform: uppercase;
+    border: none;
+    border-radius: 6px;
+    height: 39px;
+}
+
+.container__fieldset-button {
+    width: 250px;    
+    font-size: 14px;
+    grid-column: 2/3;
+    grid-row: 5/6;
+    margin-top: 10px; 
+}
+
+.container__button {
+    width: 200px;
+    font-size: 16px;
+    left: 19px;
+    margin-left: 354px;
+}
