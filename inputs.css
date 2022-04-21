@@ -47,6 +47,16 @@
     resize: none;
 }
 
+.fieldset-discount__input-text {
+    width: 200px;
+    height: 40px;
+    border-radius: 6px;
+    border: none;
+    background-color: #EEEEEE;
+    margin: 5px 0 12px 50px;
+}
+
+/*оформление чекбокса*/
 .fieldset-discount {
     position: relative;
 }
@@ -57,6 +67,7 @@
     left: 0;
     width: 40px;
     height: 40px;
+    
     border-radius: 6px;
     border: none;
     background-color: #F4F2FF;
@@ -82,13 +93,15 @@
     background-color: #F4F2FF;
 }
 
-.fieldset-discount__input-text {
-    width: 200px;
-    height: 40px;
-    border-radius: 6px;
+/*оформление кнопок*/
+.container__title-button {
+    position: absolute;
+    height: 24px;
+    width: 24px;
     border: none;
-    background-color: #EEEEEE;
-    margin: 5px 0 12px 50px;
+    top: 20px;
+    left: 735px;
+    background: url(img/close_button.svg) no-repeat;
 }
 
 .button {
@@ -111,6 +124,5 @@
 .container__button {
     width: 200px;
     font-size: 16px;
-    left: 19px;
     margin-left: 354px;
 }

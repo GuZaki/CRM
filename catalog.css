@@ -1,0 +1,245 @@
+.catalog {
+    position: relative;
+    max-width: 1300px;
+    height: 1008px;
+    margin: 0 auto;
+    padding: 79px 100px 110px;
+
+    border: none;
+    background-color: #F2F0F9;
+}
+
+.catalog__title {
+    margin: 0 0 7px 20px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 100%;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.catalog__total-price {
+    top: 80px;
+    left: 950px;
+}
+
+.catalog__title-underline {
+    height: 1px;
+    margin: 0 auto 20px;
+}
+
+.catalog__container {
+    max-width: 1100px;
+    height: 762px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/*ввод данных*/
+.catalog__catalog-header {
+    width: 100%;
+    height: 70px;
+    padding: 15px 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid #D9D5EC;
+}
+
+.catalog__catalog-header-filtre {
+    position: relative;
+    max-width: 108px;
+    height: 40px;
+    padding: 11px 10px 10px 40px;
+    margin-right: 20px;
+
+    background-color: #ffffff;
+    border: 1px solid #C6C2DE;
+    border-radius: 6px;
+
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 100%;
+    color: #25213B;
+}
+
+.catalog__catalog-header-filtre::before, 
+.catalog__catalog-header-filtre::after {
+    position: absolute;
+    content: "" ;
+    height: 20px;
+    width: 20px;
+    top: 10px;
+}
+
+.catalog__catalog-header-filtre::before{
+    background: url("img/filtre.svg") no-repeat;
+    left: 10px;
+    top: 10px;
+}
+
+.catalog__catalog-header-filtre::after /*catalog__catalog-header-search::before не выводи псевдоэлемент???*/ {
+    background: url("img/Search.svg") no-repeat;
+    left: 135px;
+    z-index: 1;
+}
+
+.catalog__catalog-header-search {
+    width: 392px;
+    height: 40px;
+    padding: 13px 20px 12px 40px;
+    margin-right: 359px;
+
+    background: #F4F2FF;
+    color: #6D5BD0;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+
+    font-size: 12px;
+    line-height: 100%;
+    font-weight: 400;
+}
+
+.catalog__catalog-header-button {
+    width: 181px;
+    font-size: 16px;
+    align-self: flex-end;
+}
+
+/*таблица*/
+.catalog-table {
+    overflow-x: auto;
+}
+
+.catalog-table__table {
+    width: 100%;
+    min-width: 930px; 
+    border-collapse: collapse;
+}
+
+tr {
+    border: 1px solid  #F2F0F9;
+}
+
+.catalog-table__table th {
+    height: 45px;
+    padding: 15px 0 15px 15px;
+    
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    text-transform: uppercase;
+    background: #F4F2FF;
+}
+
+.catalog-table__table-row td {    
+    height: 60px;
+    padding: 15px 0 15px 15px;
+
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #25213B;
+}
+
+.catalog-table__table-row td:nth-child(2), 
+.catalog-table__table-row td:nth-child(3){    
+    text-align: left;
+}
+
+.catalog-table__table-row td:nth-child(4) {    
+    color: #6E6893;
+}
+
+.catalog-table__table-row td:nth-child(5) {    
+    text-align: center;
+}
+
+.catalog-table__table-row td:nth-child(6), 
+.catalog-table__table th:nth-child(6),
+.catalog-table__table-row td:nth-child(7),
+.catalog-table__table th:nth-child(7) {    
+    text-align: right;
+}
+
+.td-button {
+    height: 20px;
+    width: 20px;
+    border: none;
+}
+
+.catalog-table__table-row .td {
+    width: 120px;
+}
+
+.td-button-no-picture {
+    background: url("img/carbon_no-image.svg") 100% no-repeat;
+    margin-right: 10px;
+    height: 20px;
+    width: 20px;
+    border: none;
+}
+
+.td-button:nth-child(1) {
+    background: url("img/clarity_picture-line.svg") 100% no-repeat;
+    margin-right: 10px;
+}
+
+.td-button:nth-child(2) {
+    background: url("img/akar-icons_edit.svg") 100% no-repeat;
+    margin-right: 10px;
+}
+
+.td-button:nth-child(3) {
+    background: url("img/ant-design_delete-outlined.svg") 100% no-repeat;
+}
+
+.catalog__catalog-footer {
+    width: 100%;
+    height: 45px;
+    background: #F4F2FF;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 50px;
+    padding: 15px 18px;
+}
+
+.catalog__catalog-footer-select {
+    position: relative;
+    opacity: 0;
+}
+
+.catalog__catalog-footer-select::after {
+    position: absolute;
+    display: block;
+    content: "";
+    height: 10px;
+    width: 100%;
+    background: url("img/Polygon\ 3.svg") no-repeat;
+    top:200px;
+    left: 100px;
+}
+
+.catalog__catalog-footer-button {
+    height: 10px;
+    width: 10px;
+    
+    border: none;
+}
+
+.left {
+    background: url("img/footer-btn-left.svg") no-repeat;
+}
+
+.right {
+    background: url("img/footer-btn-right.svg") no-repeat;
+}

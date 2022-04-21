@@ -13,62 +13,246 @@
 </head>
 <body>
     <section class="section">
-        <div class="container">
+
+        <div class="catalog">
             
-            <h1 class="container__title">Добавить товар</h1>
-            <button class="container__title-button" type="button"></button>
-            <img class="container__title-underline" src="img/Rectangle 104.svg" alt="Полоса">
-                    
-            <form class="container__form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
-                <fieldset class="container__fieldset">
-                    <fieldset class="fieldset fieldset-item">
-                        <label class="fieldset-item label" for="item">Наименование</label><br>
-                        <input class="fieldset-item input" type="text" name="name" id="item">
-                    </fieldset>
-
-                    <fieldset class="fieldset fieldset-group">
-                        <label class="fieldset-group label" for="group">Категория</label><br>
-                        <input class="fieldset-group input" type="text" name="category" id="group">
-                    </fieldset>
-
-                    <fieldset class="fieldset fieldset-measurement">
-                        <label class="fieldset-measurement label" for="measurement">Единицы измерения</label><br>
-                        <input class="fieldset-measurement input" type="text" name="units" id="measurement">
-                    </fieldset>
-
-                    <fieldset class="fieldset fieldset-discount">
-                        <label class="fieldset-discount label">Дисконт<br>
-                            <input class="fieldset-discount__input-checkbox" type="checkbox" name="discount">
-                            <div class="checkbox-mark"></div>
-                            <input class="fieldset-discount__input-text" type="text" disabled>
-                        </label>
-                    </fieldset>
-
-                    <fieldset class="fieldset fieldset-description">
-                        <label class="fieldset-description label" for="about">Описание</label><br>
-                        <textarea class="fieldset-description__textarea" name="description" id="about"></textarea>
-                    </fieldset>
-
-                    <fieldset class="fieldset fieldset-quantity">
-                        <label class="fieldset-quantity label" for="quantity">Количество</label><br>
-                        <input class="fieldset-quantity input" type="number" name="count" min="1" id="quantity">
-                    </fieldset>
-
-                    <fieldset class="fieldset fieldset-price">
-                        <label class="fieldset-price label" for="price">Цена</label><br>
-                        <input class="fieldset-price input" type="text" name="price" id="price">
-                    </fieldset>
-
-                    <button class="button container__fieldset-button" type="file">Добавить изображение</button>
-                </fieldset>
-
+            <h1 class="catalog__title">CRM</h1>
+            <p class="total-price catalog__total-price">Итоговая стоимость: <span>$ 900.00</span></p>
+            <img class="catalog__title-underline" src="img/Rectangle 104.svg" alt="Полоса">
+            
+            <div class="catalog__container">
+                <div class="catalog__catalog-header">
+                    <button class="catalog__catalog-header-filtre" type="button">Фильтр</button>
+                    <input class="catalog__catalog-header-search" type="search" placeholder="Поиск по наименованию и категории">
+                    <button class="button catalog__catalog-header-button" type="submit">Добавить товар</button>
+                </div>
                 
-                    <p class="total-price">Итоговая стоимость: <span>$ 900.00</span> </p>
-                    <button class="button container__button" type="submit">Добавить товар</button>
+                <div class="catalog-table">
+                    <table class="catalog-table__table">
+                        <tr class="catalog-table__table-header">
+                            <th width="93px">ID</th>
+                            <th width="305px">Наименование</th>
+                            <th width="175px">Категория</th>
+                            <th width="70px">ед/изм</th>
+                            <th width="106px">количество</th>
+                            <th width="70px">цена</th>
+                            <th width="70px">итог</th>
+                            <th width="130px"colspan="4"></th>
+                        </tr>
+                        <tr class="catalog-table__table-row">
+                            <td>246016548</td>
+                            <td>Навигационная система Soundmax</td>
+                            <td>Техника для дома</td>
+                            <td>шт</td>
+                            <td>5</td>
+                            <td>$100</td>
+                            <td>$500</td>
+                            <td class="td">
+                                <button class="td-button-no-picture " type="button"></button>
+                                <button class="td-button"type="button"></button>
+                                <button class="td-button"type="button"></button>
+                            </td>
+                        </tr>
+                        <tr class="catalog-table__table-row">
+                            <td>937295527</td>
+                            <td>Настольная игра “На 4-х ногах”</td>
+                            <td>Настольные игры</td>
+                            <td>шт</td>
+                            <td>12</td>
+                            <td>$14</td>
+                            <td>$168</td>
+                            <td>
+                                <button class="td-button" type="button"></button>
+                                <button class="td-button"type="button"></button>
+                                <button class="td-button"type="button"></button>
+                            </td>
+                            
+                            <tr class="catalog-table__table-row">
+                                <td>246016548</td>
+                                <td>Навигационная система Soundmax</td>
+                                <td>Техника для дома</td>
+                                <td>шт</td>
+                                <td>5</td>
+                                <td>$100</td>
+                                <td>$500</td>
+                                <td class="td">
+                                    <button class="td-button" type="button"></button>
+                                    <button class="td-button"type="button"></button>
+                                    <button class="td-button"type="button"></button>
+                                </td>
+                            </tr>
+                            <tr class="catalog-table__table-row">
+                                <td>246016548</td>
+                                <td>Навигационная система Soundmax</td>
+                                <td>Техника для дома</td>
+                                <td>шт</td>
+                                <td>5</td>
+                                <td>$100</td>
+                                <td>$500</td>
+                                <td class="td">
+                                    <button class="td-button" type="button"></button>
+                                    <button class="td-button"type="button"></button>
+                                    <button class="td-button"type="button"></button>
+                                </td>
+                            </tr>
+                            <tr class="catalog-table__table-row">
+                                <td>246016548</td>
+                                <td>Навигационная система Soundmax</td>
+                                <td>Техника для дома</td>
+                                <td>шт</td>
+                                <td>5</td>
+                                <td>$100</td>
+                                <td>$500</td>
+                                <td class="td">
+                                    <button class="td-button" type="button"></button>
+                                    <button class="td-button"type="button"></button>
+                                    <button class="td-button"type="button"></button>
+                                </td>
+                            </tr>
+                            <tr class="catalog-table__table-row">
+                                <td>246016548</td>
+                                <td>Навигационная система Soundmax</td>
+                                <td>Техника для дома</td>
+                                <td>шт</td>
+                                <td>5</td>
+                                <td>$100</td>
+                                <td>$500</td>
+                                <td class="td">
+                                    <button class="td-button" type="button"></button>
+                                    <button class="td-button"type="button"></button>
+                                    <button class="td-button"type="button"></button>
+                                </td>
+                            </tr>
+                            <tr class="catalog-table__table-row">
+                                <td>246016548</td>
+                                <td>Навигационная система Soundmax</td>
+                                <td>Техника для дома</td>
+                                <td>шт</td>
+                                <td>5</td>
+                                <td>$100</td>
+                                <td>$500</td>
+                                <td class="td">
+                                    <button class="td-button" type="button"></button>
+                                    <button class="td-button"type="button"></button>
+                                    <button class="td-button"type="button"></button>
+                                </td>
+                            </tr>
+                            <tr class="catalog-table__table-row">
+                                <td>246016548</td>
+                                <td>Навигационная система Soundmax</td>
+                                <td>Техника для дома</td>
+                                <td>шт</td>
+                                <td>5</td>
+                                <td>$100</td>
+                                <td>$500</td>
+                                <td class="td">
+                                    <button class="td-button" type="button"></button>
+                                    <button class="td-button"type="button"></button>
+                                    <button class="td-button"type="button"></button>
+                                </td>
+                            </tr>
+                            <tr class="catalog-table__table-row">
+                                <td>246016548</td>
+                                <td>Навигационная система Soundmax</td>
+                                <td>Техника для дома</td>
+                                <td>шт</td>
+                                <td>5</td>
+                                <td>$100</td>
+                                <td>$500</td>
+                                <td class="td">
+                                    <button class="td-button" type="button"></button>
+                                    <button class="td-button"type="button"></button>
+                                    <button class="td-button"type="button"></button>
+                                </td>
+                            </tr>
+                            <tr class="catalog-table__table-row">
+                                <td>246016548</td>
+                                <td>Навигационная система Soundmax</td>
+                                <td>Техника для дома</td>
+                                <td>шт</td>
+                                <td>5</td>
+                                <td>$100</td>
+                                <td>$500</td>
+                                <td class="td">
+                                    <button class="td-button" type="button"></button>
+                                    <button class="td-button"type="button"></button>
+                                    <button class="td-button"type="button"></button>
+                                </td>
+                            </tr>
+                        </tr>
+                    </table>
+                </div>
+                <div class="catalog__catalog-footer">
+                    <label>Показывать на странице: 10
+                    <select class="catalog__catalog-footer-select"></select>
+                    </label>
 
-            </form>
-
+                    <p class="catalog__catalog-footer-counter">1-10 of 276</p>
+                    <button class="catalog__catalog-footer-button left"></button>
+                    <button class="catalog__catalog-footer-button right"></button>
+                </div>
+            </div>
         </div>
+    
+
+
+
+        <div class="overlay">
+            <div class="container">    
+                <h2 class="container__title">Добавить товар</h2>
+                <button class="container__title-button" type="button"></button>
+                <img class="container__title-underline" src="img/Rectangle.svg" alt="Полоса">
+                        
+                <form class="container__form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+                    <fieldset class="container__fieldset">
+                        <fieldset class="fieldset fieldset-item">
+                            <label class="label fieldset-item" for="item">Наименование</label><br>
+                            <input class="input fieldset-item" type="text" name="name" id="item">
+                        </fieldset>
+
+                        <fieldset class="fieldset fieldset-group">
+                            <label class="label fieldset-group" for="group">Категория</label><br>
+                            <input class="input fieldset-group" type="text" name="category" id="group">
+                        </fieldset>
+
+                        <fieldset class="fieldset fieldset-measurement">
+                            <label class="label fieldset-measurement " for="measurement">Единицы измерения</label><br>
+                            <input class="input fieldset-measurement " type="text" name="units" id="measurement">
+                        </fieldset>
+
+                        <fieldset class="fieldset fieldset-discount">
+                            <label class="label fieldset-discount">Дисконт<br>
+                                <input class="fieldset-discount__input-checkbox" type="checkbox" name="discount">
+                                <div class="checkbox-mark"></div>
+                                <input class="fieldset-discount__input-text" type="text" disabled>
+                            </label>
+                        </fieldset>
+
+                        <fieldset class="fieldset fieldset-description">
+                            <label class="label fieldset-description " for="about">Описание</label><br>
+                            <textarea class="fieldset-description__textarea" name="description" id="about"></textarea>
+                        </fieldset>
+
+                        <fieldset class="fieldset fieldset-quantity">
+                            <label class="label fieldset-quantity " for="quantity">Количество</label><br>
+                            <input class="input fieldset-quantity " type="number" name="count" min="1" id="quantity">
+                        </fieldset>
+
+                        <fieldset class="fieldset fieldset-price">
+                            <label class="label fieldset-price" for="price">Цена</label><br>
+                            <input class="input fieldset-price" type="text" name="price" id="price">
+                        </fieldset>
+
+                        <button class="button container__fieldset-button" type="file">Добавить изображение</button>
+                    </fieldset>
+                    
+                        <p class="total-price container__total-price">Итоговая стоимость: <span>$ 900.00</span></p>
+                        <button class="button container__button" type="submit">Добавить товар</button>
+
+                </form>
+            </div>
+        </div>
+        
     </section>
 </body>
 </html>
